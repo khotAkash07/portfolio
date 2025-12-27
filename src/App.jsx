@@ -1,19 +1,38 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Projects from "./components/Project";
-import Contact from "./components/Contact";
+import React, {useEffect} from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Skills from './components/Skills'
+import Project from './components/Project'
+import Contact from './components/Contact'
+import './App.css'
 
 function App() {
+
+
+    useEffect(() => {
+        // Scrolls to the top-left corner immediately
+        window.scrollTo(0, 0);
+
+        // Optional: Clears URL hash (e.g., removes #contact from url)
+        if (window.location.hash) {
+            window.history.replaceState(null, null, ' ');
+        }
+    }, []);
     return (
-        <>
+        <div className="bg-[#0a192f] text-slate-300 min-h-screen scroll-smooth">
             <Navbar />
-            <Hero />
-            <Skills />
-            <Projects />
-            <Contact />
-        </>
-    );
+            <main className="max-w-[1300px] mx-auto px-8">
+                <Hero />
+                <Skills />
+                <Project />
+                <Contact />
+            </main>
+            <footer className="text-center py-10 text-slate-500 text-sm border-t border-slate-800">
+                © {new Date().getFullYear()} Akash Khot. Built with React & Tailwind.
+            </footer>
+        </div>
+    )
+
 }
 
-export default App;
+export default App
