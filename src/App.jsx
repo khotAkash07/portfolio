@@ -28,7 +28,7 @@ function App() {
                 <Contact />
             </main>
             <footer className="text-center py-10 text-slate-500 text-sm border-t border-slate-800">
-                © {new Date().getFullYear()} Akash Khot. Built with React & Tailwind.
+                © {new Date().getFullYear()} Akash Anil Khot. Built with React & Tailwind.
             </footer>
         </div>
     )
