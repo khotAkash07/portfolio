@@ -17,8 +17,9 @@ const Hero = () => {
             <h1 className="text-5xl sm:text-7xl font-bold text-slate-100 mb-2">Akash Anil Khot.</h1>
             <h2 className="text-4xl sm:text-6xl font-bold text-slate-400">I build scalable full-stack apps.</h2>
             <p className="py-6 max-w-[600px] leading-relaxed">
-                I’m a developer specializing in Java, Spring Boot, and React. I love creating
-                efficient backend systems and responsive frontend experiences.
+                Certified Java Full Stack Developer with a Master’s in Computer Applications.
+                Proficient in building scalable web applications using React.js, Spring Boot, and MySQL.
+                Passionate about developing secure REST APIs and responsive user interfaces.
             </p>
             <div className='flex flex-row gap-4'>
                 <a href="#projects" className="border-2 border-cyan-400 px-6 py-3 my-2 inline-block hover:bg-cyan-400/10 transition">
