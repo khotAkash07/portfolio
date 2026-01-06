@@ -25,11 +25,11 @@ const Hero = () => {
                     View My Work
                 </a>
                 <a
-                    href="/Akash_Khot_resume.pdf"
+                    href={`https://khotakash07.github.io/portfolio/Akash_Khot_resume.pdf`}
                     download="Akash_Khot_resume.pdf"
                     className="flex gap-2 border-2 border-cyan-400 px-6 py-3 my-2 hover:bg-cyan-400/10 transition"
                 >
-                    {/* Download Icon (SVG) */}
+                {/* Download Icon (SVG) */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -41,7 +41,7 @@ const Hero = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75V17.25m0 0L8.25 13.5m3.75 3.75 3.75-3.75M12 3v2.25" />
                     </svg>
 
-                    Download CV
+                    Download Resume
                 </a>
             </div>
 
