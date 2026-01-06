@@ -14,7 +14,7 @@ const Hero = () => {
           ${loaded ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}
         `}>
             <p>Hi, my name is</p>
-            <h1 className="text-5xl sm:text-7xl font-bold text-slate-100 mb-2">Akash Khot.</h1>
+            <h1 className="text-5xl sm:text-7xl font-bold text-slate-100 mb-2">Akash Anil Khot.</h1>
             <h2 className="text-4xl sm:text-6xl font-bold text-slate-400">I build scalable full-stack apps.</h2>
             <p className="py-6 max-w-[600px] leading-relaxed">
                 I’m a developer specializing in Java, Spring Boot, and React. I love creating
