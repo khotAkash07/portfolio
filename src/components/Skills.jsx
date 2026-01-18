@@ -24,7 +24,6 @@ const Skills = () => {
         <section id='skills' className="bg-slate-900 text-slate-200 py-24 px-6 md:px-16">
             <div className="max-w-6xl mx-auto">
 
-                {/* Header Section */}
                 <div className="mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Technical Skills</h2>
                     <div className="h-1 w-20 bg-blue-400 rounded"></div>
