@@ -10,10 +10,8 @@ function App() {
 
 
     useEffect(() => {
-        // Scrolls to the top-left corner immediately
         window.scrollTo(0, 0);
 
-        // Optional: Clears URL hash (e.g., removes #contact from url)
         if (window.location.hash) {
             window.history.replaceState(null, null, ' ');
         }
