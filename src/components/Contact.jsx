@@ -5,8 +5,8 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="py-16 md:py-24 px-4 sm:px-6 flex flex-col items-center text-slate-100"
-        >
+            className="py-16 md:py-24 px-4 sm:px-6 flex flex-col items-center text-slate-100">
+            
             {/* HEADING */}
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 md:mb-16">
                 Get in Touch 📬
@@ -122,9 +122,9 @@ const InfoCard = ({ icon, title, value, href, external }) => {
     );
 };
 
-//
+
 // ---------------- ICONS ----------------
-//
+
 const MailIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
         <rect width="20" height="16" x="2" y="4" rx="2" />
