@@ -26,8 +26,8 @@ const Hero = () => {
                     View My Work
                 </a>
                 <a
-                    href={`https://khotakash07.github.io/portfolio/Akash_Khot_resume.pdf`}
-                    download="Akash_Khot_resume.pdf"
+                    href={`https://khotakash07.github.io/portfolio/Akash_Khot_Resume.pdf`}
+                    download="Akash_Khot_Resume.pdf"
                     className="flex gap-2 border-2 border-cyan-400 px-6 py-3 my-2 hover:bg-cyan-400/10 transition"
                 >
                 {/* Download Icon (SVG) */}
