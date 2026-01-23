@@ -2,10 +2,61 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 body {
+    background-color: #020617;
+    /* Handled by Canvas now, keeping fallback */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    color: #e2e8f0;
+}
+
+/* Animated Text Class */
+.animate-text-gradient {
+    background: linear-gradient(to right, #22d3ee, #8b5cf6, #f472b6, #22d3ee);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-anim 8s ease infinite;
+}
+
+@keyframes gradient-anim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Text Selection */
+::selection {
+    background: rgba(34, 211, 238, 0.2);
+    color: #22d3ee;
 }
