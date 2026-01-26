@@ -60,8 +60,8 @@ const Hero = () => {
                     </a>
 
                     <a
-                        href="/portfolio/Akash_Khot_Resume.pdf"
-                        download="Akash_Khot_Resume.pdf"
+                        href="/portfolio/AkashKhotResume.pdf"
+                        download="AkashKhotResume.pdf"
                         className="px-8 py-4 font-bold text-cyan-400 border border-cyan-400 rounded-md hover:bg-cyan-400/10 transition duration-300 flex items-center gap-2 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]"
                     >
                         RESUME
