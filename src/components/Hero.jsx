@@ -1,53 +1,75 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
-    const [loaded, setLoaded] = useState(false);
-
-    useEffect(() => {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
-        setLoaded(true);
-    }, []);
     return (
-        <section id="home" className={`h-screen flex flex-col justify-center
-          text-xl text-slate-400
-          transform transition-all duration-1000 delay-300 ease-out
-          ${loaded ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}
-        `}>
-            <p>Hi, my name is</p>
-            <h1 className="text-5xl sm:text-7xl font-bold text-slate-100 mb-2">Akash Anil Khot.</h1>
-            <h2 className="text-4xl sm:text-6xl font-bold text-slate-400">I build scalable full-stack apps.</h2>
-            <p className="py-6 max-w-[600px] leading-relaxed">
-                Certified Java Full Stack Developer with a Master’s in Computer Applications.
-                Proficient in building scalable web applications using React.js, Spring Boot, and MySQL.
-                Passionate about developing secure REST APIs and responsive user interfaces.
-            </p>
-            <div className='flex flex-row gap-4'>
-                <a href="#projects" className="border-2 border-cyan-400 px-6 py-3 my-2 inline-block hover:bg-cyan-400/10 transition">
-                    View My Work
-                </a>
-                <a
-                    href={`https://khotakash07.github.io/portfolio/Akash_Khot_Resume.pdf`}
-                    download="Akash_Khot_Resume.pdf"
-                    className="flex gap-2 border-2 border-cyan-400 px-6 py-3 my-2 hover:bg-cyan-400/10 transition"
+        <section id="home" className="min-h-screen flex flex-col justify-center px-4 md:px-0 pt-20">
+            <div className="max-w-[1000px] mx-auto w-full relative">
+                {/* Decorative Shape */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+
+                <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-cyan-400 font-mono mb-4 tracking-widest text-lg"
                 >
-                {/* Download Icon (SVG) */}
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2.5}
-                        stroke="currentColor"
-                        className="w-5 h-5 mt-1"
+                    &lt;Hello /&gt; my name is
+                </motion.p>
+
+                <motion.h1
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="text-6xl sm:text-8xl font-black text-slate-100 mb-2 leading-tight tracking-tighter"
+                >
+                    Akash <span className="animate-text-gradient">Anil Khot</span>.
+                </motion.h1>
+
+                <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="text-2xl sm:text-3xl font-semibold text-slate-300 mb-6 tracking-wide"
+                >
+                    Software Developer <span className="text-cyan-400">(Fresher)</span>
+                </motion.p>
+
+                <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    className="text-slate-400 max-w-[600px] leading-relaxed mb-10 text-lg border-l-4 border-cyan-400 pl-6 bg-slate-900/30 py-4 backdrop-blur-sm"
+                >
+                    Certified Java Full Stack Developer. Master of Applications.
+                    I fuse <span className="text-slate-100 font-medium">React.js</span> visuals with robust <span className="text-slate-100 font-medium">Spring Boot</span> backends to build high-performance web ecosystems.
+                </motion.p>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.8 }}
+                    className='flex flex-row gap-6'
+                >
+                    <a
+                        href="#projects"
+                        className="group relative px-8 py-4 font-bold text-slate-900 bg-cyan-400 rounded-md overflow-hidden transform hover:-translate-y-1 transition duration-300 shadow-[0_0_20px_rgba(34,211,238,0.5)] hover:shadow-[0_0_40px_rgba(34,211,238,0.7)]"
                     >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75V17.25m0 0L8.25 13.5m3.75 3.75 3.75-3.75M12 3v2.25" />
-                    </svg>
+                        <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-cyan-400 to-blue-500 opacity-100 transition duration-300 ease-out group-hover:opacity-90"></span>
+                        <span className="relative z-10">EXPLORE WORK</span>
+                    </a>
 
-                    Download Resume
-                </a>
+                    <a
+                        href="/portfolio/Akash_Khot_Resume.pdf"
+                        download="Akash_Khot_Resume.pdf"
+                        className="px-8 py-4 font-bold text-cyan-400 border border-cyan-400 rounded-md hover:bg-cyan-400/10 transition duration-300 flex items-center gap-2 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]"
+                    >
+                        RESUME
+                    </a>
+                </motion.div>
             </div>
-
         </section>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;
